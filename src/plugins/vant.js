@@ -6,18 +6,10 @@ import {
     NavBar,
     Tabbar,
     TabbarItem,
-    Swipe,
-    SwipeItem,
+    Swipe, SwipeItem,
     Toast,
     Lazyload,
-    Grid,
-    GridItem,
-    Tab,
-    Tabs,
-    Image,
-    ImagePreview
-
-
+    Grid, GridItem
 } from 'vant';
 
 Vue.use(Button);
@@ -27,7 +19,3 @@ Vue.use(Swipe).use(SwipeItem);
 Vue.use(Toast);
 Vue.use(Lazyload);
 Vue.use(Grid).use(GridItem);
-Vue.use(Tab).use(Tabs);
-Vue.use(Lazyload)
-Vue.use(Image)
-Vue.use(ImagePreview)

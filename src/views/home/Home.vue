@@ -15,7 +15,7 @@
         <img src="../../assets/images/menu1.png" alt="">
         <p>新闻资讯</p>
       </van-grid-item>
-      <van-grid-item to="/share">
+      <van-grid-item to="/share" >
         <img src="../../assets/images/menu2.png" alt="">
         <p>图片分享</p>
       </van-grid-item>
@@ -52,7 +52,7 @@ export default {
     async querySwipeData() {
       const res = await this.$http.get("api/getlunbo"); //请求
       // 处理结果
-      console.log(res);
+      //console.log(res);
 
       if (res.status !== 0)
         return this.$toast.fail("服务器异常，请求轮播图片失败"); //failed

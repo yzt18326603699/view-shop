@@ -7,55 +7,57 @@ import User from '../views/user/Users.vue'
 import News from '../views/home/new/News.vue'
 import Share from '../views/home/share/Share.vue'
 import Goodslist from '../views/home/goods/Goodslist.vue'
+import Detail from '../views/home/share/Detail.vue'
 
 
 Vue.use(VueRouter)
 
-const routes = [
-  {
-    path: '/',
-    redirect: '/home'
-  },
-  // 首页
-  {
-    path: '/home',
-    component: Home
-  },
-  // 搜索
-  {
-    path: '/search',
-    component: Search
-  },
-  // 购物车
-  {
-    path: '/shopCar',
-    component: Shop
-  },
-  // 用户
-  {
-    path: '/user',
-    component: User
-  },
-  // 新闻资讯
-  {
-    path: '/news',
-    component: News
-  },
-  // 图片分享
-  {
-    path: '/share',
-    component: Share
-  },
-  // 商品购买
-  {
-    path: '/goodslist',
-    component: Goodslist
-  }
+const routes = [{
+        path: '/',
+        redirect: '/home'
+    },
+    // 首页
+    {
+        path: '/home',
+        component: Home
+    },
+    // 搜索
+    {
+        path: '/search',
+        component: Search
+    },
+    // 购物车
+    {
+        path: '/shopCar',
+        component: Shop
+    },
+    // 用户
+    {
+        path: '/user',
+        component: User
+    },
+    // 新闻资讯
+    {
+        path: '/news',
+        component: News
+    },
+    // 图片分享
+    {
+        path: '/share',
+        component: Share,
+
+    },
+    { path: '/detail', component: Detail },
+    // 商品购买
+    {
+        path: '/goodslist',
+        component: Goodslist
+    }
 
 ]
 
 const router = new VueRouter({
-  routes
+    routes
 })
 
 export default router
